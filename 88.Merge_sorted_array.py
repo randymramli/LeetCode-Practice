@@ -13,6 +13,10 @@ def merge(nums1, m, nums2, n):
             i -=1
         k -=1
     
+    if j >= 0:
+            nums1[:k+1] = nums2[:j+1]
+
+
     return nums1
 
 

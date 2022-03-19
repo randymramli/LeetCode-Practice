@@ -62,3 +62,22 @@ where
         Where E2.Salary > E.Salary
         And E.departmentId = E2.departmentId
     )
+  
+
+-- 595 Big Countries
+
+select name, population, area
+from World
+Where area > 3000000 or population >25000000
+
+-- 596 Classes More Than 5 Students
+select class
+from Courses
+group by class
+having count(distinct student) >= 5
+
+
+-- 1303. Find the Team Size
+select employee_id,
+    count(employee_id) over (partition by team_id) as 'team_size'
+from Employee
