@@ -1,3 +1,6 @@
+from signal import strsignal
+
+
 def longestCommonPrefix(strs):
     a = len(strs)
     result = ""
@@ -19,6 +22,22 @@ def longestCommonPrefix(strs):
         result += current
     return result
 
+def test(strs):
+    answer = ""
+    # result = zip(*strs)
+    # for i in result:
+    #     print(i)
+
+    for i in zip(*strs):
+        if len(set(i)) == 1:
+            print(set(i))
+            answer += i[0]
+            print(answer)
+        else:
+            break
+    return answer
+
 if __name__ == '__main__':
     strs = ["flower","flow","flight"]
-    longestCommonPrefix(strs)
+    # longestCommonPrefix(strs)
+    test(strs)
