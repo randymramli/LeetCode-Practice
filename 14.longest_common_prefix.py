@@ -40,4 +40,7 @@ def test(strs):
 if __name__ == '__main__':
     strs = ["flower","flow","flight"]
     # longestCommonPrefix(strs)
+    a = zip(*strs)
+    for i in a:
+        print(i)
     test(strs)
