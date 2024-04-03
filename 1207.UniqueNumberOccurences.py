@@ -9,10 +9,7 @@ def uniqueOccurrences(arr):
                  hashMap[i] += 1
             else:
                  hashMap[i] = 1
-        
-        for i in hashMap:
-             print(hashMap.keys())
-             print(hashMap.values())
+
         
         return len(list(set(hashMap.values()))) == len(hashMap.values())
         
