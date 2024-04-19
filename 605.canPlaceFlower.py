@@ -18,13 +18,11 @@ def canPlaceFlowers(flowerbed, n):
         if (flowerbed[last] == 0 and flowerbed[last - 1] == 0):
             n -= 1
         
-
-        
         for i in range(secondLot, totalBed - 1):
             if (flowerbed[i - 1] == 0 and flowerbed[i] == 0 and flowerbed[i + 1] == 0):
-                 flowerbed[i] = 1
-                 print(flowerbed)
-                 n -= 1
+                flowerbed[i] = 1
+                print(flowerbed)
+                n -= 1
         
         print(n)
 
