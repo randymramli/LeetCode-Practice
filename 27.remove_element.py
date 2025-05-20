@@ -9,7 +9,11 @@ def removeElement(nums, val):
             if i != val:
                 nums[res] = i
                 res += 1
+                print(res)
+                print(nums)
+        
         print(res)
+        print(nums)
 
 if __name__ == '__main__':
     nums = [3,2,2,3]
