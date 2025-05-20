@@ -9,7 +9,7 @@ def climbStairs(n):
         a = a + b
         b = a - b
         n -= 1
-    return a
+    print(a)
 if __name__ == '__main__':
-    n = 2
+    n = 5
     climbStairs(n)
