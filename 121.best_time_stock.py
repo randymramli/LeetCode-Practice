@@ -24,10 +24,25 @@ def maxProfit2(prices):
             maxProfit = prices[i] - minProfit
     print(maxProfit)
 
+def maxProfit3(prices):
+    min_price = float('inf')
+    max_profit = 0
+    
+    for price in prices:
+        min_price = min(min_price, price)
+        print("p:   ",price)
+        print("min: ", min_price)
+        max_profit = max(max_profit, price - min_price)
+        print("max: ", max_profit, "\n")
+
+    
+    return max_profit
+
 
 
 
 if __name__ == '__main__':
-    prices = [7,6,4,3,1,5]
-    maxProfit(prices)
-    maxProfit2(prices)
+    prices = [7,1,3,6,5,4]
+    # maxProfit(prices)
+    # maxProfit2(prices)
+    maxProfit3(prices)

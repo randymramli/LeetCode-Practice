@@ -30,7 +30,7 @@ def test(strs):
 
     for i in zip(*strs):
         if len(set(i)) == 1:
-            print(set(i))
+            # print(set(i))
             answer += i[0]
             print(answer)
         else:
@@ -40,7 +40,7 @@ def test(strs):
 if __name__ == '__main__':
     strs = ["flower","flow","flight"]
     # longestCommonPrefix(strs)
-    a = zip(*strs)
-    for i in a:
-        print(i)
+    # a = zip(*strs)
+    # for i in a:
+    #     print(i)
     test(strs)

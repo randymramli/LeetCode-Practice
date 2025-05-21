@@ -1,17 +1,17 @@
 def isPalindrome(s):
-    # result = (''.join(char for char in s if char.isalnum())).lower()
-    # print(result)
+    result = (''.join(char for char in s if char.isalnum())).lower()
+    print(result)
 
-    res = ""
+    # res = ""
 
-    for char in s:
-        if char.isalnum():
-            res += char.lower()
+    # for char in s:
+    #     if char.isalnum():
+    #         res += char.lower()
     
-    abc = res[::-1] + "..abc"
+    # abc = res[::-1]
     
-    print(res)
-    print(abc)
+    # print(res)
+    # print(abc)
 
 
 if __name__ == '__main__':
