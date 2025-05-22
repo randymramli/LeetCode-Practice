@@ -1,4 +1,4 @@
- class ListNode(object):
+class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
@@ -23,3 +23,6 @@ def addTwoNumbers(self, l1, l2):
 
 
 if __name__ == '__main__':
+    l1 = [2,4,3]
+    l2 = [5,6,4]
+    addTwoNumbers(l1,l2)

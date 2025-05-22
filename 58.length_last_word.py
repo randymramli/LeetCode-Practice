@@ -5,7 +5,6 @@ def lengthOfLastWord(s):
 
     while i >= 0 and s[i] == " ":
         i -= 1
-        print(i)
 
     while i >= 0 and s[i] != " ":
         count += 1

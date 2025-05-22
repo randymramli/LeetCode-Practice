@@ -17,9 +17,8 @@ def twoHash(nums, target):
     for i in range(a):
         complement = target - nums[i]
         if complement in hashmap and hashmap[complement] != i:
-            new.append(i)
-            new.append(hashmap[complement])
-    print(new)
+            return [i, hashmap[complement]]
+    print('[]')
 
 def twoHashTwo(nums, target):
     hashmap = {}
@@ -34,6 +33,6 @@ def twoHashTwo(nums, target):
 if __name__ == '__main__':
     list = [2,3,6,11,7,15]
     target = 9
-    twoSum(list, target)
-    twoHash(list, target)
+    # twoSum(list, target)
+    # twoHash(list, target)
     # twoHashTwo(list, target)
