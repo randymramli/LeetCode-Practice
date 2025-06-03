@@ -1,9 +1,8 @@
 def reverseBits(n):
-    res = 0
-    n = int(n)&1
-    print(int(n))
+    n = int(n)
+
     for i in range(8):
-        res <<= 1
+        res = (res << 1)
     
     print(res)
 
